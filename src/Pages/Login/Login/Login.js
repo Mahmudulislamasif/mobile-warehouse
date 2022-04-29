@@ -5,6 +5,7 @@ import auth from '../../../firebase.init'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
+import SocialLogin from '../SocialLogin/SocialLogin';
 const Login = () => {
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('');
@@ -61,6 +62,7 @@ const Login = () => {
             <p>New to here? <Link className='auth-design' to='/signUp'>Register</Link></p>
             <p>Forget Password? <button className='check-button' onClick={()=>resetPassword(email)}>Reset Password</button></p>
             <ToastContainer />
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

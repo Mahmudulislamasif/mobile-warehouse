@@ -1,0 +1,22 @@
+.horizontal-line
+{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-line, .right-line
+{
+    height: 1px;
+    width: 145px;
+}
+.left-line
+{
+    background: #1b4388;
+    background: linear-gradient(90deg, #1b4388 0%, #1e90c2 100%);
+}
+.right-line
+{
+    background: #1b4388;
+    background: linear-gradient(90deg, #1b4388 0%, #1e90c2 100%);
+}

@@ -1,14 +1,26 @@
+.section-class
+{
+    background-color: rgb(240, 223, 202);
+}
+
 .details-class
 {
-    background-color: bisque;
+
     padding: 10px;
+    background-color: rgb(238, 234, 228);
+    border-radius: 10px;
 }
+
 .description-class
 {
     text-align: left;
     text-align: justify;
 }
-
+.image-class
+{
+    border: 2px solid black;
+    border-radius: 10px;
+}
 .check-button
 {
     background-color: orange;

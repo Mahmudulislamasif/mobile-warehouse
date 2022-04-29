@@ -15,6 +15,9 @@ const Navbar = () => {
                         <Link className='link-class' to='/home'>Home</Link>
                         <Link className='link-class' to='/blogs'>Blogs</Link> 
                     </div>
+                    <div className='ms-auto'>
+                    <Link className='link-class' to='/login'>Login</Link> 
+                    </div>
                     </div>
                 </div>
                 </nav>

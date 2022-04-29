@@ -1,30 +1,30 @@
 [
     {
         "_id":1,
-        "name":"Egg",
-        "description":"Lorem",
-        "price":10,
+        "name":"Rice",
+        "description":"Boiled and Sunshine rices are imported from villages farms",
+        "price":52,
         "quantity":1,
-        "supplier":"Akib",
-        "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
+        "supplier":"Jewel Rice Agency",
+        "image":"https://i.ibb.co/VjMyR1n/Rice.jpg"
     },
     {
         "_id":2,
         "name":"Egg",
-        "description":"Lorem",
+        "description":"This product is imported from different farms of the country",
         "price":10,
         "quantity":1,
-        "supplier":"Akib",
+        "supplier":"Kazi Farms",
         "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
     },
     {
         "_id":3,
-        "name":"Egg",
-        "description":"Lorem",
-        "price":10,
+        "name":"Oil",
+        "description":"Oils are mainly imported from foreign country",
+        "price":150,
         "quantity":1,
         "supplier":"Akib",
-        "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
+        "image":"https://i.ibb.co/gMBFsSj/pusti.jpg"
     },
     {
         "_id":4,

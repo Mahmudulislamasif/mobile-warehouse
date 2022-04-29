@@ -3,11 +3,50 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+}
+.carousel-heading
+{
+    color: black;
+}
+.carousel-heading-1
+{
+    font-weight: 900;
+    color: black;
+}
+.carousel-image-class
+{
+    opacity: 0.6;
+}
+.heading-class
+{
     background-color: antiquewhite;
+}
+.heading-class h1
+{
+    color: rgb(10, 10, 26);
+    font-size: 35px;
+}
+.heading-class h3
+{
+    color: rgb(70, 70, 230);
+    font-size: 30px;
 }
 
 .heading-class
 {
     text-align: left;
+}
+@media only screen and (max-width:592px) {
+
+   
+    .heading-class h1
+    {
+        font-size: 16px;
+    }
+    .heading-class h3
+    {
+        font-size: 14px;
+    }
+    
 }

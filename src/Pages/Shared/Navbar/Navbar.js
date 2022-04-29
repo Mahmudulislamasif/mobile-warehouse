@@ -25,6 +25,14 @@ const Navbar = () => {
                     </div>
                     <div className='ms-auto'>
                     {
+                        user && 
+                        <>
+                          <Link className='link-class' to='/manageitems'>Manage Items</Link>
+                          <Link  className='link-class' to='/additem'>Add Item</Link>
+                          <Link  className='link-class' to='/myitems'>My Items</Link>
+                        </>
+                    }
+                    {
                        user? <Link className='link-class' onClick={handleSignOut} to='/login'>Signout</Link>:
                        <Link className='link-class' to='/login'>Login</Link>
                    }

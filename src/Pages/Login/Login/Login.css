@@ -1,0 +1,51 @@
+.login-form
+{
+    margin: 0 auto;
+    width:50%;
+    background-color: rgb(247, 245, 242);
+    padding: 20px;
+    margin-top: 20px;
+
+}
+.login-form h1
+{
+    text-align: center;
+}
+.login-form input
+{
+    display: block;
+    width:100%;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    background-color: #ebdde4;
+    border: none;
+    border-radius: 5px;
+
+    
+}
+.login-form .btn-class
+{
+    width: 100%;
+    background-color: orange;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.auth-design
+{
+    text-decoration: none;
+    color: #ff0080;
+}
+.auth-design:hover
+{
+    color: #ff0080;
+}
+@media only screen and (max-width:576px) {
+    .login-form{
+        width: 80%;
+    }
+}

@@ -1,0 +1,15 @@
+.navbar-class
+{
+    background-color: rgb(145, 115, 115);
+}
+
+.link-class
+{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.link-class:hover
+{
+    color: white;
+}

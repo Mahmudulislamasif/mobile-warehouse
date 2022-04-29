@@ -1,0 +1,26 @@
+.details-class
+{
+    background-color: bisque;
+    padding: 10px;
+}
+.description-class
+{
+    text-align: left;
+    text-align: justify;
+}
+
+.check-button
+{
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+.link-class-check
+{
+    text-decoration: none;
+    color: black;
+}
+.link-class-check:hover
+{
+    color:black
+}

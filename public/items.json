@@ -1,0 +1,39 @@
+[
+    {
+        "_id":1,
+        "name":"Egg",
+        "description":"Lorem",
+        "price":10,
+        "quantity":1,
+        "supplier":"Akib",
+        "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
+    },
+    {
+        "_id":2,
+        "name":"Egg",
+        "description":"Lorem",
+        "price":10,
+        "quantity":1,
+        "supplier":"Akib",
+        "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
+    },
+    {
+        "_id":3,
+        "name":"Egg",
+        "description":"Lorem",
+        "price":10,
+        "quantity":1,
+        "supplier":"Akib",
+        "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
+    },
+    {
+        "_id":4,
+        "name":"Egg",
+        "description":"Lorem",
+        "price":10,
+        "quantity":1,
+        "supplier":"Akib",
+        "image":"https://i.ibb.co/P6QB6LD/egg.jpg"
+    }
+
+]

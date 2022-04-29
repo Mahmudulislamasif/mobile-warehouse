@@ -1,0 +1,13 @@
+.header-class
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.heading-class
+{
+    text-align: left;
+}

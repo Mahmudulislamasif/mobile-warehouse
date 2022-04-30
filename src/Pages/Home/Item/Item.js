@@ -1,8 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Item.css'
 const Item = (props) => {
-    const {name,image,description,price}=props.item;
+    const {_id,name,image,description,price}=props.item;
+    const navigate=useNavigate();
+    const navigateToItemsDetails=(id)=>{
+      navigate(`/inventory/${id}`)
+    }
+
     return (
         <div className='col-md-4 '>
              <div className='shadow-lg p-3 section-class'>
@@ -11,7 +16,7 @@ const Item = (props) => {
               <h5>{name}</h5>
               <p className='description-class'>{description}</p>
               <h6 className='mb-2'>Price:{price}tk</h6>
-              <button className='check-button'><Link className='link-class-check'  to='/checkout'>CheckOut</Link></button>
+              <button className='check-button link-class-check' onClick={()=>navigateToItemsDetails(_id)}>Update</button>
               </div>
             </div>
         </div>

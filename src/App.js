@@ -9,6 +9,7 @@ import SignUp from './Pages/Login/SignUp/SignUp';
 import ReqiurwAuth from './Pages/Login/ReqiureAuth/ReqiurwAuth';
 import ItemDetails from './Pages/Home/ItemDetails/ItemDetails';
 import AddItems from './Pages/Home/AddItems/AddItems';
+import ManageItems from './Pages/ManageItems/ManageItems';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           </ReqiurwAuth>
         }>
         </Route>
+        <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
       </Routes>
     </div>
   );

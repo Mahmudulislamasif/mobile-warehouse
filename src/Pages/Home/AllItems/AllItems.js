@@ -4,7 +4,6 @@ import UseHook from '../UseHook/UseHook';
 
 const AllItems = () => {
     const [items]=UseHook([])
-   
     return (
         <div className='container'>
             <h1>Items</h1>

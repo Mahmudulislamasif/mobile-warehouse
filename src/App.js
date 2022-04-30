@@ -8,6 +8,7 @@ import Login from './Pages/Login/Login/Login';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import ReqiurwAuth from './Pages/Login/ReqiureAuth/ReqiurwAuth';
 import ItemDetails from './Pages/Home/ItemDetails/ItemDetails';
+import AddItems from './Pages/Home/AddItems/AddItems';
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
         <Route path='/inventory/:id' element={
            <ReqiurwAuth>
            <ItemDetails></ItemDetails>
+          </ReqiurwAuth>
+        }>
+        </Route>
+        <Route path='/additems' element={
+           <ReqiurwAuth>
+           <AddItems></AddItems>
           </ReqiurwAuth>
         }>
         </Route>

@@ -3,13 +3,32 @@ import Item from '../Home/Item/Item';
 import UseHook from '../Home/UseHook/UseHook';
 
 const ManageItems = () => {
-    const [items]=UseHook([])
+    const [items,setItems]=UseHook([])
+    const handleDelete=id=>{
+        const proceed=window.confirm('Are you sure to delete items?')
+        if(proceed)
+        { 
+            fetch(`http://localhost:5000/inventory/${id}`,
+            {
+                method:'DELETE'
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data)
+                const remaining=items.filter(item=>item._id!==id)
+                setItems(remaining)
+            })
+        }
+    }
     return (
         <div className='container'>
                  <h1>Items</h1>
                  <div className='row g-4'>
                  {
-                      items.map(item=><Item key={item._id} item={item}></Item>)
+                      items.map(item=><div key={item._id}>
+                          <h4>{item.name} <button onClick={()=>handleDelete(item._id)}>X</button></h4>
+
+                      </div>)
                  }
                  </div>
             

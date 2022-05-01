@@ -4,11 +4,11 @@ const UseHook = () => {
     const [items,setItems]=useState([]);
   
     useEffect(()=>{
-        fetch('http://localhost:5000/item')
+        fetch('http://localhost:5000/inventory')
         .then(res=>res.json())
         .then(data=>setItems(data))
       },[])
-      return[items]
+      return[items,setItems]
 };
 
 export default UseHook;

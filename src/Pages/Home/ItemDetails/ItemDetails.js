@@ -36,6 +36,25 @@ const ItemDetails = () => {
                     console.log(data)
                 })
         };
+        const increaseQuantity =(event)=>
+        {
+              event.preventDefault();
+              const quantity=parseFloat(item.quantity)-1;
+              const updateQuatity={quantity}
+              const url=`http://localhost:5000/inventory/${id}`
+              fetch(url,
+                {
+                    method:'PUT',
+                    headers:{
+                        'content-type':'application/json'
+                    },
+                    body:JSON.stringify(updateQuatity)
+                })
+                .then(res=>res.json)
+                .then(data=>{
+                    console.log(data)
+                })
+        };
 
     return (
         <div className='container'>
@@ -43,7 +62,7 @@ const ItemDetails = () => {
                <div className='col-md-6'>
                   <h3>Name: {item.name}</h3>
                   <h3>Quantity:{item.quantity}</h3>
-                  <button>Delevered</button>
+                  <button onClick={increaseQuantity}>Delevered</button>
                 <form onSubmit={handleQuantity}>
                   <input type='number' name='name'/>
                   <input type='submit' value='Stoke'/>

@@ -26,7 +26,26 @@ const ManageItems = () => {
                  <div className='row g-4'>
                  {
                       items.map(item=><div className='div-class' key={item._id}>
-                          <h4>{item.name} <button className='delete-btn'  onClick={()=>handleDelete(item._id)}>X</button></h4>
+                          <table className='table'>
+                              <thead>
+                                  <tr>
+                                      <th scope='col'>Name</th>
+                                      <th scope='col'>Price</th>
+                                      <th scope='col'></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>{item.name}</td>
+                                      <td>{item.price}</td>
+                                      <td><button className='delete-btn'  onClick={()=>handleDelete(item._id)}>X</button></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          <tr>
+                          
+                          
+                          </tr>
                       </div>)
                  }
                  </div>

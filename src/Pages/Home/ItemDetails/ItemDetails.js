@@ -41,9 +41,9 @@ const ItemDetails = () => {
         <div className='container'>
             <div className='row'>
                <div className='col-md-6'>
-               
                   <h3>Name: {item.name}</h3>
                   <h3>Quantity:{item.quantity}</h3>
+                  <button>Delevered</button>
                 <form onSubmit={handleQuantity}>
                   <input type='number' name='name'/>
                   <input type='submit' value='Stoke'/>

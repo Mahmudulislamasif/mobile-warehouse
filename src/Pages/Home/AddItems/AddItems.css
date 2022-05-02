@@ -1,0 +1,19 @@
+.add-form-class
+{
+    background-color: beige;
+    padding: 10px;
+}
+.add-form input
+{
+    margin-bottom: 10px;
+    border: 2px solid rgb(235, 229, 229);  
+}
+hr
+{
+    border:2px solid rgb(0, 0, 0);
+}
+::placeholder
+{
+    color: purple;
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import './AddItems.css'
 const AddItems = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => 
@@ -25,16 +25,16 @@ const AddItems = () => {
    
     
     return (
-        <div className='w-50 mx-auto'>
+        <div className='w-50 mx-auto add-form-class'>
             <h1>Add New Items Here</h1>
-            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+            <form className='d-flex flex-column add-form' onSubmit={handleSubmit(onSubmit)}>
                     <input placeholder='Name' {...register("name")} />
-                    <input placeholder='Description'  {...register("description")} />
+                    <textarea className='mb-2' placeholder='Description'  {...register("description")} />
                     <input placeholder='Price' type="number" {...register("price")} />
                     <input placeholder='Number' type="number" {...register("quantity")} />
                     <input placeholder='Supplier'  type="text" {...register("supplier")} />
                     <input placeholder='Photo URL'  type="text" {...register("image")} />
-                    <input type="submit" value="Add Items" />
+                    <input type="submit" value="Add Items" className=''/>
              </form>
         </div>
     );

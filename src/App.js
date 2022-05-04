@@ -10,6 +10,7 @@ import ReqiurwAuth from './Pages/Login/ReqiureAuth/ReqiurwAuth';
 import ItemDetails from './Pages/Home/ItemDetails/ItemDetails';
 import AddItems from './Pages/Home/AddItems/AddItems';
 import ManageItems from './Pages/ManageItems/ManageItems';
+import MyItems from './Pages/MyItems/MyItems';
 
 function App() {
   return (
@@ -34,7 +35,9 @@ function App() {
         }>
         </Route>
         <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
+        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
       </Routes>
+   
     </div>
   );
 }

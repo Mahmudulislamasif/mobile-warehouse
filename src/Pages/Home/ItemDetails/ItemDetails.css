@@ -1,0 +1,30 @@
+.details-description-class
+{
+    text-align: left;
+}
+.delevered-btn
+{
+    background-color: rgb(48, 48, 95);
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+.manage-link
+{
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2px;
+}
+.manage-link:hover
+{
+ color: white;
+ border-radius: 2px;
+}
+.stoke-class
+{
+    background-color:orange;
+    border: none;
+    padding: 3px;
+    border-radius: 2px;
+
+}

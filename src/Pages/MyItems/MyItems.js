@@ -5,11 +5,12 @@ const MyItems = () => {
     const [user]=useAuthState(auth)
     const [items,setItems]=useState([])
     useEffect(()=>{
+        
     const email=user.email;
-    const url=`http://localhost:5000/inventory/${email}`
+    const url=`http://localhost:5000/inventory?email=${email}`
     fetch(url)
     .then(res=>res.json())
-    .then(data=>setItems(data))
+    .then(data=>console.log(data))
     },[user])
     return (
         <div>

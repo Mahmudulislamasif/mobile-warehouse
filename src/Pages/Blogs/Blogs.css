@@ -1,0 +1,18 @@
+.table-class
+{
+    text-align: left;
+    background-color: rgb(235, 235, 235);
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+}
+.caption-class
+{
+   color: black;
+}
+.question-class
+{
+    background-color: palegreen;
+    padding: 20px;
+    color: black;
+}

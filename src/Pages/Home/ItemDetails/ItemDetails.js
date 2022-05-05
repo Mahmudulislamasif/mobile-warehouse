@@ -35,20 +35,24 @@ const ItemDetails = () => {
               event.preventDefault();
               const quantity=parseFloat(item.quantity)-1;
               const updateQuatity={quantity}
-             
-              const url=`http://localhost:5000/inventory/${id}`
-              fetch(url,
-                {
-                    method:'PUT',
-                    headers:{
-                        'content-type':'application/json'
-                    },
-                    body:JSON.stringify(updateQuatity)
-                })
-                .then(res=>res.json)
-                .then(data=>{
-                    console.log(data)
-                })
+              if(quantity>=0 )
+              {
+                const url=`http://localhost:5000/inventory/${id}`
+                fetch(url,
+                  {
+                      method:'PUT',
+                      headers:{
+                          'content-type':'application/json'
+                      },
+                      body:JSON.stringify(updateQuatity)
+                  })
+                  .then(res=>res.json)
+                  .then(data=>{
+                      console.log(data)
+                  })
+              }
+            
+           
         };
 
     return (

@@ -34,8 +34,17 @@ function App() {
           </ReqiurwAuth>
         }>
         </Route>
-        <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
-        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
+        <Route path='/manageitems' element={
+         <ReqiurwAuth>
+           <ManageItems></ManageItems>
+         </ReqiurwAuth>
+        }></Route>
+        <Route path='/myitems' element={
+         <ReqiurwAuth>
+            <MyItems></MyItems>
+         </ReqiurwAuth>
+        }
+        ></Route>
       </Routes>
    
     </div>

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Services.css'
-import { faBoxArchive, faBoxesPacking, faBoxesStacked, faCartFlatbed, faCartPlus, faCheckSquare, faDriversLicense, faHome, faHomeAlt, faStore, faStoreAlt, faStoreAltSlash, faStoreSlash, faTruck, faTruckPickup } from '@fortawesome/free-solid-svg-icons'
+import {  faCartPlus, faCheckSquare, faStore, faTruck } from '@fortawesome/free-solid-svg-icons'
 const Services = () => {
     return (
         <div className='container'>

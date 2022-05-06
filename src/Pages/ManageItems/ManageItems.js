@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import {faTrashAlt} from '@fortawesome/free-solid-svg-icons'
-import Item from '../Home/Item/Item';
 import UseHook from '../Home/UseHook/UseHook';
 import './ManageItems.css'
 const ManageItems = () => {
@@ -17,7 +16,6 @@ const ManageItems = () => {
             })
             .then(res=>res.json())
             .then(data=>{
-                console.log(data)
                 const remaining=items.filter(item=>item._id!==id)
                 setItems(remaining)
             })

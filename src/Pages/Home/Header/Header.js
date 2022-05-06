@@ -14,7 +14,7 @@ const Header = () => {
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src={image1} class="d-block w-100" alt="..."/>
+                    <img src={image1} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-md-block">
                       <h5 className='carousel-heading'>Collection of products</h5>
                     </div>

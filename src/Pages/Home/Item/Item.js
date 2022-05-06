@@ -15,7 +15,7 @@ const Item = (props) => {
               <div className='details-class mt-2'>
               <h5>{name}</h5>
               <hr/>
-              <p className='description-class'>{description}</p>
+              <p className='description-class'>Description:{description}</p>
               <p className='description-class'>Quantity:{quantity}</p>
               <h6 className='mb-2 description-class'>Price:{price} tk</h6>
               <h6 className='mb-2 description-class'>Supplier:{supplier} </h6>

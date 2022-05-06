@@ -1,20 +1,26 @@
 .add-form-class
 {
-    background-color: beige;
+    background-color: rgb(204, 204, 204);
     padding: 10px;
     margin-top: 10px;
+    border-radius: 10px;
 }
 .add-form input
 {
-    margin-bottom: 10px;
-    border: 2px solid rgb(235, 229, 229);  
+    margin-bottom: 10px;  
+    border-radius: 2px;
+    border: none;
 }
-hr
-{
-    border:2px solid rgb(0, 0, 0);
-}
+
 ::placeholder
 {
-    color: purple;
+    color: black;
+}
+.btn-class
+{
+    background-color: rgb(145, 52, 140);
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
 

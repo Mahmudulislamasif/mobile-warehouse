@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
+import { ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 import './AddItems.css'
 const AddItems = () => {
@@ -32,13 +33,13 @@ const AddItems = () => {
             <h1>Add New Items Here</h1>
             <form className='d-flex flex-column add-form' onSubmit={handleSubmit(onSubmit)}>
                     <input placeholder='Email' value={user.email} {...register("email")} readOnly />
-                    <input placeholder='Product Name' {...register("name")} />
-                    <textarea className='mb-2' placeholder='Description'  {...register("description")} />
-                    <input placeholder='Price' type="number" {...register("price")} />
-                    <input placeholder='Number' type="number" {...register("quantity")} />
-                    <input placeholder='Supplier'  type="text" {...register("supplier")} />
-                    <input placeholder='Photo URL'  type="text" {...register("image")} />
-                    <input type="submit" value="Add Items" className=''/>
+                    <input placeholder='Product Name' {...register("name")} required />
+                    <textarea className='mb-2' placeholder='Description'  {...register("description")} required/>
+                    <input placeholder='Price' type="number" {...register("price")}  required/>
+                    <input placeholder='Number' type="number" {...register("quantity")} required />
+                    <input placeholder='Supplier'  type="text" {...register("supplier")} required />
+                    <input placeholder='Photo URL'  type="text" {...register("image")} required/>
+                    <input type="submit" value="Add Items" className='btn-class'/>
              </form>
         </div>
     );

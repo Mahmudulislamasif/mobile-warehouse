@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import ShowMessege from '../../ShowMessege/ShowMessege';
 import './ItemDetails.css'
 const ItemDetails = () => {
     const {id}=useParams()
@@ -51,6 +52,7 @@ const ItemDetails = () => {
                       console.log(data)
                   })
               }
+             
             
            
         };
@@ -64,6 +66,7 @@ const ItemDetails = () => {
                 </div>
                <div className='col-md-6'>
                  <div className='details-description-class' >
+                   <h3>ID: {item._id}</h3>
                    <h3>Name: {item.name}</h3>
                    <h3>Price: {item.price}</h3>
                    <h3>Quantity:{item.quantity}</h3>

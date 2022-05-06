@@ -6,11 +6,11 @@ const AllItems = () => {
     const [items]=UseHook([])
     return (
         <div className='container'>
-            <h1>Items</h1>
+            <h1>Inventory Items</h1>
            <div className='row g-4'>
            {
                
-                items.map(item=><Item key={item._id} item={item}></Item>)
+                items.slice(0,6).map(item=><Item key={item._id} item={item}></Item>)
            }
            </div>
         </div>

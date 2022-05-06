@@ -11,6 +11,7 @@ import ItemDetails from './Pages/Home/ItemDetails/ItemDetails';
 import AddItems from './Pages/Home/AddItems/AddItems';
 import ManageItems from './Pages/ManageItems/ManageItems';
 import MyItems from './Pages/MyItems/MyItems';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
         }
         ></Route>
       </Routes>
-   
+      <Footer></Footer>
     </div>
   );
 }

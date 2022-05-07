@@ -3,14 +3,19 @@ import React from 'react';
 import {faTrashAlt} from '@fortawesome/free-solid-svg-icons'
 import UseHook from '../Home/UseHook/UseHook';
 import './ManageItems.css'
+import Spinner from '../Shared/Spinner/Spinner';
 const ManageItems = () => {
     const [items,setItems]=UseHook([])
+    if(items.length===0)
+    {
+        return <Spinner></Spinner>
+    }
     let count=1;
     const handleDelete=id=>{
         const proceed=window.confirm('Are you sure to delete items?')
         if(proceed)
         { 
-            fetch(`http://localhost:5000/inventory/${id}`,
+            fetch(`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`,
             {
                 method:'DELETE'
             })

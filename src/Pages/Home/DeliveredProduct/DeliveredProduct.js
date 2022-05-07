@@ -2,6 +2,7 @@ import React from 'react';
 import image1 from './Images/Oppo-K10-5G-Blue.jpg'
 import image2 from './Images/Oppo-Find-N.jpg'
 import image3 from './Images/Oppo-K9x-Blue.jpg'
+import './DeliveredProduct.css'
 const DeliveredProduct = () => {
     return (
         <div className='container'>

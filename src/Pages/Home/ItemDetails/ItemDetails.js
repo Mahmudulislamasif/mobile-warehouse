@@ -6,7 +6,7 @@ const ItemDetails = () => {
     const [item,setItems]=useState({})
 
     useEffect(()=>{
-        const url=`http://localhost:5000/inventory/${id}`
+        const url=`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setItems(data))
@@ -16,7 +16,7 @@ const ItemDetails = () => {
               event.preventDefault();
               const quantity=parseFloat(event.target.name.value)+parseFloat(item.quantity);
               const updateQuatity={quantity}
-              const url=`http://localhost:5000/inventory/${id}`
+              const url=`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`
               fetch(url,
                 {
                     method:'PUT',
@@ -37,7 +37,7 @@ const ItemDetails = () => {
               const updateQuatity={quantity}
               if(quantity>=0 )
               {
-                const url=`http://localhost:5000/inventory/${id}`
+                const url=`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`
                 fetch(url,
                   {
                       method:'PUT',

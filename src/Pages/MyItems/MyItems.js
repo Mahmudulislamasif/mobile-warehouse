@@ -8,7 +8,7 @@ const MyItems = () => {
 
     useEffect(()=>{
         const email=user.email;
-        const url=`http://localhost:5000/myitem?email=${email}`
+        const url=`https://agile-brushlands-55517.herokuapp.com/myitem?email=${email}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setMyitems(data))

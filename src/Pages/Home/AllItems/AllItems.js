@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import Spinner from '../../Shared/Spinner/Spinner';
 import Item from '../Item/Item';
 import UseHook from '../UseHook/UseHook';
 
 const AllItems = () => {
     const [items]=UseHook([])
+    if(items.length===0)
+    {
+       return <Spinner></Spinner>
+    }
     return (
         <div className='container'>
             <h1>Inventory Items</h1>

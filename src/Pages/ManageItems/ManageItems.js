@@ -25,14 +25,13 @@ const ManageItems = () => {
         <div className='container'>
                  <h1>Items</h1>
                  <div className='row g-4'>
-              
                  <table className='table'>
                  <thead>
                         <tr>
-                                      <th></th>
-                                      <th scope='col'>Name</th>
-                                      <th scope='col'>Price</th>
-                                      <th scope='col'>Delete</th>
+                            <th></th>
+                            <th scope='col'>Name</th>
+                            <th scope='col'>Price</th>
+                            <th scope='col'>Delete</th>
                        </tr>
                      </thead>
                      <tbody>

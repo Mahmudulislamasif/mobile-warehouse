@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ShowMessege from '../../ShowMessege/ShowMessege';
 import './ItemDetails.css'
 const ItemDetails = () => {
     const {id}=useParams()

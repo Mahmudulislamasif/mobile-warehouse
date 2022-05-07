@@ -15,7 +15,7 @@ const SocialLogin = () => {
                 return <p>Loading...</p>;
             }
             if (user) {
-                navigate('/checkout')
+                navigate('/home')
             }
     return (
         <div>

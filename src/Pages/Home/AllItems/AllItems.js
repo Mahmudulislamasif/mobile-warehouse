@@ -10,7 +10,7 @@ const AllItems = () => {
            <div className='row g-4'>
            {
                
-                items.slice(0,6).map(item=><Item key={item._id} item={item}></Item>)
+                items?.slice(0,6).map(item=><Item key={item._id} item={item}></Item>)
            }
            </div>
         </div>

@@ -12,6 +12,7 @@ import AddItems from './Pages/Home/AddItems/AddItems';
 import ManageItems from './Pages/ManageItems/ManageItems';
 import MyItems from './Pages/MyItems/MyItems';
 import Footer from './Pages/Shared/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -46,7 +47,9 @@ function App() {
          </ReqiurwAuth>
         }
         ></Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+    
       <Footer></Footer>
     </div>
   );

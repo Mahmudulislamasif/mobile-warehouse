@@ -4,6 +4,7 @@ import {faTrashAlt} from '@fortawesome/free-solid-svg-icons'
 import UseHook from '../Home/UseHook/UseHook';
 import './ManageItems.css'
 import Spinner from '../Shared/Spinner/Spinner';
+import { Link } from 'react-router-dom';
 const ManageItems = () => {
     const [items,setItems]=UseHook([])
     if(items.length===0)
@@ -52,10 +53,10 @@ const ManageItems = () => {
                              </tr>)
                          }
 
-                     </tbody>
-                                                                                                                          
+                     </tbody>                                                                                                   
                  </table>
                  </div>
+                 <Link className='delevered-btn manage-link' to='/additems'>Add Items</Link>
             
         </div>
     );

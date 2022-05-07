@@ -1,3 +1,4 @@
+
 .details-description-class
 {
     text-align: left;
@@ -8,12 +9,12 @@
     border: none;
     color: white;
     border-radius: 2px;
+    padding: 5px;
 }
 .manage-link
 {
     text-decoration: none;
     margin-left: 10px;
-    padding: 2px;
 }
 .manage-link:hover
 {

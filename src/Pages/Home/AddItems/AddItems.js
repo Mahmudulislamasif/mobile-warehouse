@@ -1,7 +1,8 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import './AddItems.css'
 const AddItems = () => {
@@ -23,6 +24,7 @@ const AddItems = () => {
         .then(result=>
             {
                 console.log(result)
+                toast('Items added successfully')
             })
     };
   
@@ -41,6 +43,7 @@ const AddItems = () => {
                     <input placeholder='Photo URL'  type="text" {...register("image")} required/>
                     <input type="submit" value="Add Items" className='btn-class'/>
              </form>
+             <ToastContainer/>
         </div>
     );
 };

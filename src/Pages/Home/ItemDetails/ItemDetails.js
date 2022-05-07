@@ -4,7 +4,7 @@ import './ItemDetails.css'
 const ItemDetails = () => {
     const {id}=useParams()
     const [item,setItems]=useState({})
-
+    const [showSold,setSold]=useState(false)
     useEffect(()=>{
         const url=`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`
         fetch(url)
@@ -35,6 +35,11 @@ const ItemDetails = () => {
               event.preventDefault();
               const quantity=parseFloat(item.quantity)-1;
               const updateQuatity={quantity}
+              if(quantity<0)
+              {
+                  alert("There is no item Available item is sold out")
+
+              }
               if(quantity>=0 )
               {
                 const url=`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`
@@ -77,6 +82,7 @@ const ItemDetails = () => {
                     <input type='number' name='name'/>
                     <input type='submit' value='Stoke' className='stoke-class'/>
                   </form>
+                  
                  </div>
                 </div>
             </div>

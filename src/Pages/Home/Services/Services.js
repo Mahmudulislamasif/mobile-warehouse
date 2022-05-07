@@ -5,7 +5,7 @@ import {  faCartPlus, faCheckSquare, faStore, faTruck } from '@fortawesome/free-
 const Services = () => {
     return (
         <div className='container'>
-            <h1 className='mt-3'>Our Services</h1>
+            <h1 className='mt-3'>Services</h1>
             <div className='row'>
                 <div className='col-md-3'>
                    <div className='service-class'>

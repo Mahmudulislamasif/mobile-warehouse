@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Footer from '../../Shared/Footer/Footer';
+import React from 'react';
 import AllItems from '../AllItems/AllItems';
+import DeliveredProduct from '../DeliveredProduct/DeliveredProduct';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
 
@@ -10,6 +10,7 @@ const Home = () => {
             <Header></Header>
             <AllItems></AllItems>
             <Services></Services>
+            <DeliveredProduct></DeliveredProduct>
         </div>
     );
 };

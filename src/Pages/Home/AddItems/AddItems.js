@@ -38,7 +38,7 @@ const AddItems = () => {
                     <input placeholder='Product Name' {...register("name")} required />
                     <textarea className='mb-2' placeholder='Description'  {...register("description")} required/>
                     <input placeholder='Price' type="number" {...register("price")}  required/>
-                    <input placeholder='Number' type="number" {...register("quantity")} required />
+                    <input placeholder='Quantity' type="number" {...register("quantity")} required />
                     <input placeholder='Supplier'  type="text" {...register("supplier")} required />
                     <input placeholder='Photo URL'  type="text" {...register("image")} required/>
                     <input type="submit" value="Add Items" className='btn-class'/>

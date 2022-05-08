@@ -37,6 +37,7 @@ const ManageItems = () => {
                             <th></th>
                             <th scope='col'>Name</th>
                             <th scope='col'>Price</th>
+                            <th scope='col'>Quantity</th>
                             <th scope='col'>Delete</th>
                        </tr>
                      </thead>
@@ -46,10 +47,11 @@ const ManageItems = () => {
                                 <td>{count++}</td>
                                 <td>{item.name}</td>
                                 <td>{item.price}</td>
+                                <td>{item.quantity}</td>
                                 <td>
-                                          <button className='btn-delete' onClick={()=>handleDelete(item._id)}>
-                                          <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon></button>
-                                     </td>
+                                    <button className='btn-delete' onClick={()=>handleDelete(item._id)}>
+                                    <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon></button>
+                                </td>
                              </tr>)
                          }
 

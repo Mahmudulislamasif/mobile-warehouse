@@ -5,7 +5,7 @@ import image3 from './Images/Oppo-K9x-Blue.jpg'
 import './DeliveredProduct.css'
 const DeliveredProduct = () => {
     return (
-        <div className='container'>
+        <div className='container body-class'>
             <div>
                 <h1 className='mt-3'>Our Upcomming Product</h1>
                 <div className='row'>

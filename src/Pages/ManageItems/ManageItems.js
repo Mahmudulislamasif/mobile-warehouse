@@ -31,10 +31,10 @@ const ManageItems = () => {
         <div className='container'>
                  <h1>Items</h1>
                  <div className='row g-4'>
-                 <table className='table'>
+                 <table className='table table-bordered'>
                  <thead>
                         <tr>
-                            <th></th>
+                            <th>SN</th>
                             <th scope='col'>Name</th>
                             <th scope='col'>Price</th>
                             <th scope='col'>Quantity</th>

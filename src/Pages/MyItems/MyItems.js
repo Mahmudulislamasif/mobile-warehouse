@@ -35,7 +35,7 @@ const handleDelete=id=>{
         <div className='container'>
             <h1>My Items</h1>
             <div className='row'>
-            <table className='table'>
+            <table className='table table-bordered'>
                <thead>
                    <tr>
                        <th>Name</th>

@@ -40,7 +40,8 @@ const handleDelete=id=>{
                    <tr>
                        <th>Name</th>
                        <th>Price</th>
-                       <th></th>
+                       <th>Quantity</th>
+                       <th>Delete</th>
                    </tr>
                </thead>
                <tbody>
@@ -48,6 +49,7 @@ const handleDelete=id=>{
                        myitems.map(item=><tr key={item._id}>
                            <td>{item.name}</td>
                            <td>{item.price}</td>
+                           <td>{item.quantity}</td>
                            <td>
                                 <button className='btn-delete' onClick={()=>handleDelete(item._id)}>
                                 <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon></button>

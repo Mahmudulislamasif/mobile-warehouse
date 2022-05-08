@@ -41,7 +41,7 @@ const AddItems = () => {
                     <input placeholder='Quantity' type="number" {...register("quantity")} required />
                     <input placeholder='Supplier'  type="text" {...register("supplier")} required />
                     <input placeholder='Photo URL'  type="text" {...register("image")} required/>
-                    <input type="submit" value="Add Items" className='btn-class'/>
+                    <input type="submit" value="Add Items" className='btn-class-submit'/>
              </form>
              <ToastContainer/>
         </div>

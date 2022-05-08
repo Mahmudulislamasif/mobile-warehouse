@@ -4,11 +4,10 @@ import './ItemDetails.css'
 const ItemDetails = () => {
     const {id}=useParams()
     const [item,setItems]=useState({})
-    const [showSold,setSold]=useState(false)
     useEffect(()=>{
         const url=`https://agile-brushlands-55517.herokuapp.com/inventory/${id}`
         fetch(url)
-        .then(res=>res.json())
+        .then(res=>res.json()) 
         .then(data=>setItems(data))
     })
     const handleQuantity =(event)=>

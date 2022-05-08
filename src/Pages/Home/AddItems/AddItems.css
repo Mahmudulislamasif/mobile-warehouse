@@ -1,7 +1,7 @@
 
 .add-form-class
 {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(240, 240, 240);
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
@@ -12,11 +12,16 @@
     border-radius: 2px;
     border: none;
 }
-
-::placeholder
+.btn-class-submit
 {
-    color: rgb(211, 83, 83);
+ background-color: purple;
+ color: white;
+ width: 50%;
+ margin: 0 auto;
+ padding: 5px;
 }
+
+
 .btn-class
 {
     background-color: rgb(145, 52, 140);
